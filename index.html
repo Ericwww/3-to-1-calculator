@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<style type="text/css">
-	h2 {text-align: center;}
-	h3 {text-align: center;}
-	h5 {text-align: center;}
-</style>
+	<meta charset="utf-8">
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="function.js"></script>
+	<link rel="stylesheet" href="style.css">
 	<title>欢迎使用三位一体计算器</title>
 </head>
 <body>
 <h2><b>欢迎使用三位一体计算器</b></h2>
-<h3><b>距离2017年高考还有</b>
+<h3>距离2018年高考还有</h3>
 <br>
+<div class="timer"></div>
 
-<font color="red"><b><big><big><script>document.write(Math.ceil((new Date(1496793600000) - new Date())/1000/24/60/60))</script></big></big></b></font>天</h3>
-<div style="text-align:center;">
+
 <form>
-<a href="zhcj.html"><input type="button" name="jisuanzonghechengji" value="计算综合成绩" ></a>
-<a href="gkcj.html"><input type="button" name="jisuangaokaochengji" value="计算高考成绩" ></a>
+<a href="zhcj.html"><input type="button" id="zhcj" value="计算综合成绩"></a>
+<a href="gkcj.html"><input type="button" id="gkcj" value="计算高考成绩"></a>
 </form>
-</div>
-<a href="http://www.miitbeian.gov.cn/" style="color: grey;text-align: center;">浙ICP备17003288号-1</a>
+<footer><a href="http://www.miitbeian.gov.cn/" style="color: grey;text-align: center;">浙ICP备17003288号-1</a></footer>
+
 </body>
 </html>
