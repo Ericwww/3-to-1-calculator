@@ -8,3 +8,31 @@
 body{
     text-align: center;
 }
+
+a:link,a:visited{
+    text-decoration:none;  /*超链接无下划线*/
+}
+
+a:hover{
+    text-decoration:underline;  /*鼠标放上去有下划线*/
+}
+
+.button{
+    border: none;
+    border-radius: 5px;
+    background:none;
+    font-size: 15px;
+
+}
+.button:hover{
+    background-color: #C8C8C8;
+}
+
+footer{
+    background-color: #323232;
+    color: #FFFFFF;
+}
+
+.footer{
+    color: #FFFFFF;
+}
