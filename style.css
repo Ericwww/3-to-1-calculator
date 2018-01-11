@@ -1,38 +1,61 @@
-.timer{
+.timer {
     color: red;
     font-size: 40px;
     font-weight: bold;
-
 }
 
-body{
+body {
     text-align: center;
 }
 
-a:link,a:visited{
-    text-decoration:none;  /*超链接无下划线*/
+a:link,
+a:visited {
+    text-decoration: none;
+    /*超链接无下划线*/
 }
 
-a:hover{
-    text-decoration:underline;  /*鼠标放上去有下划线*/
+a:hover {
+    text-decoration: underline;
+    /*鼠标放上去有下划线*/
 }
 
-.button{
-    border: none;
+.button {
+    border: 0px;
     border-radius: 5px;
-    background:none;
+    background: rgba(0, 0, 0, 0);
     font-size: 15px;
-
+    width: 115px;
+    height: 25px;
+    /*放在主页面中按钮会太宽 记得修改*/
 }
-.button:hover{
+
+.button:hover {
     background-color: #C8C8C8;
 }
 
-footer{
+footer {
     background-color: #323232;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.footer {
     color: #FFFFFF;
 }
 
-.footer{
-    color: #FFFFFF;
+.background{
+    background-image: url(background_1.png);
+    background-size: 300px;
+    background-color: #d2d2d2;
+}
+
+.text{
+    width: 60px;
+    height: 15px;
+}
+
+#university{
+    border-width: 0px;
+    width: 150px;
+    height: 20px;
 }
