@@ -8,13 +8,13 @@ body {
     text-align: center;
 }
 
-a:link,
-a:visited {
+footer a:link,
+footer a:visited {
     text-decoration: none;
     /*超链接无下划线*/
 }
 
-a:hover {
+footer a:hover {
     text-decoration: underline;
     /*鼠标放上去有下划线*/
 }
@@ -24,7 +24,6 @@ a:hover {
     border-radius: 5px;
     background: rgba(0, 0, 0, 0);
     font-size: 15px;
-    width: 115px;
     height: 25px;
     /*放在主页面中按钮会太宽 记得修改*/
 }
