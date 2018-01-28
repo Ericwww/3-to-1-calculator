@@ -4,8 +4,10 @@
     font-weight: bold;
 }
 
-body {
+html,body {
     text-align: center;
+    margin:0;
+    padding: 0;
 }
 
 footer a:link,
@@ -25,7 +27,6 @@ footer a:hover {
     background: rgba(0, 0, 0, 0);
     font-size: 15px;
     height: 25px;
-    /*放在主页面中按钮会太宽 记得修改*/
 }
 
 .button:hover {
@@ -36,6 +37,7 @@ footer {
     background-color: #323232;
     color: #FFFFFF;
     font-size: 12px;
+    width: 100%;
 }
 
 .footer {
@@ -46,6 +48,7 @@ footer {
     background-image: url(background_1.png);
     background-size: 300px;
     background-color: #d2d2d2;
+    margin: 0px;
 }
 
 .text{
@@ -57,4 +60,14 @@ footer {
     border-width: 0px;
     width: 150px;
     height: 20px;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+
+.p_zhcj_gkcj{
+    margin: 8px
 }

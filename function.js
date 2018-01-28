@@ -1,4 +1,4 @@
-function calculate() {
+function timer() {
     let days = 0;
     let hours = 0;
     let minutes = 0;
@@ -13,9 +13,9 @@ function calculate() {
     return `${days}天${hours}小时${minutes}分${seconds}秒`;
 }
 setInterval(() => {
-    document.getElementsByClassName('timer')[0].innerHTML = calculate();
+    document.getElementsByClassName('timer')[0].innerHTML = timer();
 }, 1000);
-document.getElementsByClassName('timer')[0].innerHTML = calculate();
+document.getElementsByClassName('timer')[0].innerHTML = timer();
 
 
 //计算综合成绩的函数
@@ -448,3 +448,19 @@ function delet() {
     document.form1.text7.value = "";
     document.form1.text8.value = "";
 }
+
+$(function(){
+    function footerPosition(){
+        $("footer").removeClass("fixed-bottom");
+        var contentHeight = document.body.scrollHeight,//网页正文全文高度
+            winHeight = window.innerHeight;//可视窗口高度，不包括浏览器顶部工具栏
+        if(!(contentHeight > winHeight)){
+            //当网页正文高度小于可视窗口高度时，为footer添加类fixed-bottom
+            $("footer").addClass("fixed-bottom");
+        } else {
+            $("footer").removeClass("fixed-bottom");
+        }
+    }
+    footerPosition();
+    $(window).resize(footerPosition);
+});
