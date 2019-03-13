@@ -1,14 +1,9 @@
 .timer {
     color: red;
-    font-size: 40px;
-    font-weight: bold;
+    
 }
 
-html,body {
-    text-align: center;
-    margin:0;
-    padding: 0;
-}
+
 
 footer a:link,
 footer a:visited {
@@ -56,11 +51,7 @@ footer {
     height: 15px;
 }
 
-#university{
-    border-width: 0px;
-    width: 150px;
-    height: 20px;
-}
+
 
 .fixed-bottom {
     position: fixed;
@@ -68,6 +59,3 @@ footer {
     width:100%;
 }
 
-.p_zhcj_gkcj{
-    margin: 8px
-}

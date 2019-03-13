@@ -5,85 +5,105 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="function.js"></script>
-	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
 	<title>三位一体计算器-计算高考成绩</title>
 </head>
 
 <body class="background">
-	<div style="text-align:center;">
-		<form id="form1">
-			<p class="p_zhcj_gkcj">
-				报考学校&nbsp;
-				<select id="university">
-					<option value="Empty"></option>
-					<option value="浙江工业大学">浙江工业大学</option>
-					<option value="浙江师范大学">浙江师范大学</option>
-					<option value="宁波大学">宁波大学</option>
-					<option value="杭州电子科技大学">杭州电子科技大学</option>
-					<option value="浙江工商大学">浙江工商大学</option>
-					<option value="浙江理工大学(普通类)">浙江理工大学(普通类)</option>
-					<option value="浙江理工大学(美术类)">浙江理工大学(美术类)</option>
-					<option value="温州医科大学">温州医科大学</option>
-					<option value="浙江海洋大学">浙江海洋大学</option>
-					<option value="浙江农林大学">浙江农林大学</option>
-					<option value="浙江中医药大学">浙江中医药大学</option>
-					<option value="中国计量大学">中国计量大学</option>
-					<option value="浙江万里学院">浙江万里学院</option>
-					<option value="浙江科技学院(普通类)">浙江科技学院(普通类)</option>
-					<option value="浙江科技学院(艺术类)">浙江科技学院(艺术类)</option>
-					<option value="浙江财经大学">浙江财经大学</option>
-					<option value="嘉兴学院">嘉兴学院</option>
-					<option value="杭州师范大学(小学教育、学前教育、特殊教育、护理学、电子商务)">杭州师范大学(小学教育、学前教育、特殊教育、护理学、电子商务)</option>
-					<option value="湖州师范学院">湖州师范学院</option>
-					<option value="绍兴文理学院">绍兴文理学院</option>
-					<option value="台州学院">台州学院</option>
-					<option value="温州大学">温州大学</option>
-					<option value="浙江外国语学院">浙江外国语学院</option>
-					<option value="宁波工程学院">宁波工程学院</option>
-					<option value="衢州学院">衢州学院</option>
-					<option value="浙江水利水电学院">浙江水利水电学院</option>
-					<option value="浙江警察学院">浙江警察学院</option>
-					<option value="丽水学院">丽水学院</option>
-					<option value="温州肯恩大学">温州肯恩大学</option>
-					<option value="宁波诺丁汉大学">宁波诺丁汉大学</option>
-					<option value="浙江音乐学院">浙江音乐学院</option>
-					<option value="浙江大学城市学院">浙江大学城市学院</option>
-					<option value="浙江大学宁波理工学院">浙江大学宁波理工学院</option>
-					<option value="浙江树人学院">浙江树人学院</option>
-					<option value="浙江越秀外国语学院">浙江越秀外国语学院</option>
-					<option value="宁波大红鹰学院">宁波大红鹰学院</option>
-					<option value="温州医科大学仁济学院">温州医科大学仁济学院</option>
-					<option value="浙江中医药大学滨江学院">浙江中医药大学滨江学院</option>
-					<option value="中国计量大学现代科技学院">中国计量大学现代科技学院</option>
-					<option value="杭州师范大学钱江学院">杭州师范大学钱江学院</option>
-					<option value="温州商学院">温州商学院</option>
-					<option value="同济大学浙江学院">同济大学浙江学院</option>
-					<option value="上海财经大学浙江学院">上海财经大学浙江学院</option>
-					<option value="金华职业技术学院">金华职业技术学院</option>
-				</select>
+	<div class="container">
+		<form class="form-inline" id="form1" role="form">
+			<div class="form-group">
+				<label class="col-4 control-label">
+					报考学校
+				</label>
+				<div class="col-8">
+					<select class="form-control" id="university">
+						<option value="Empty"></option>
+						<option value="浙江工业大学">浙江工业大学</option>
+						<option value="浙江师范大学">浙江师范大学</option>
+						<option value="宁波大学">宁波大学</option>
+						<option value="杭州电子科技大学">杭州电子科技大学</option>
+						<option value="浙江工商大学">浙江工商大学</option>
+						<option value="浙江理工大学(普通类)">浙江理工大学(普通类)</option>
+						<option value="浙江理工大学(美术类)">浙江理工大学(美术类)</option>
+						<option value="温州医科大学">温州医科大学</option>
+						<option value="浙江海洋大学">浙江海洋大学</option>
+						<option value="浙江农林大学">浙江农林大学</option>
+						<option value="浙江中医药大学">浙江中医药大学</option>
+						<option value="中国计量大学">中国计量大学</option>
+						<option value="浙江万里学院">浙江万里学院</option>
+						<option value="浙江科技学院(普通类)">浙江科技学院(普通类)</option>
+						<option value="浙江科技学院(艺术类)">浙江科技学院(艺术类)</option>
+						<option value="浙江财经大学">浙江财经大学</option>
+						<option value="嘉兴学院">嘉兴学院</option>
+						<option value="杭州师范大学(小学教育、学前教育、特殊教育、护理学、电子商务)">杭州师范大学(小学教育、学前教育、特殊教育、护理学、电子商务)</option>
+						<option value="湖州师范学院">湖州师范学院</option>
+						<option value="绍兴文理学院">绍兴文理学院</option>
+						<option value="台州学院">台州学院</option>
+						<option value="温州大学">温州大学</option>
+						<option value="浙江外国语学院">浙江外国语学院</option>
+						<option value="宁波工程学院">宁波工程学院</option>
+						<option value="衢州学院">衢州学院</option>
+						<option value="浙江水利水电学院">浙江水利水电学院</option>
+						<option value="浙江警察学院">浙江警察学院</option>
+						<option value="丽水学院">丽水学院</option>
+						<option value="温州肯恩大学">温州肯恩大学</option>
+						<option value="宁波诺丁汉大学">宁波诺丁汉大学</option>
+						<option value="浙江音乐学院">浙江音乐学院</option>
+						<option value="浙江大学城市学院">浙江大学城市学院</option>
+						<option value="浙江大学宁波理工学院">浙江大学宁波理工学院</option>
+						<option value="浙江树人学院">浙江树人学院</option>
+						<option value="浙江越秀外国语学院">浙江越秀外国语学院</option>
+						<option value="宁波大红鹰学院">宁波大红鹰学院</option>
+						<option value="温州医科大学仁济学院">温州医科大学仁济学院</option>
+						<option value="浙江中医药大学滨江学院">浙江中医药大学滨江学院</option>
+						<option value="中国计量大学现代科技学院">中国计量大学现代科技学院</option>
+						<option value="杭州师范大学钱江学院">杭州师范大学钱江学院</option>
+						<option value="温州商学院">温州商学院</option>
+						<option value="同济大学浙江学院">同济大学浙江学院</option>
+						<option value="上海财经大学浙江学院">上海财经大学浙江学院</option>
+						<option value="金华职业技术学院">金华职业技术学院</option>
+					</select>
+				</div>
+			</div>
+		</form>
+		<form class="form-inline" id="form2" role="form">
+			<div class="form-group">
+				<label class="col-4 control-label">
+					学考成绩
+				</label>
+				<div class="col-8">
+					<input id="text1" type="text" class="form-control col-2">A
+					<input id="text2" type="text" class="form-control col-2">B
+					<input id="text3" type="text" class="form-control col-2">C
+					<input id="text4" type="text" class="form-control col-2">D
+				</div>
+			</div>
+		</form>
+		<form class="form-inline" id="form3" role="form">
+		<div class="form-group">
+			<label class="col-2 control-label">面试成绩</label>
+				<input id="text5" type="text" class="form-control col-3">
+				<label class="col-4 control-label">目标综合成绩</label>
+				<input id="text6" type="text" class="form-control col-3">
 			</p>
-			<p class="p_zhcj_gkcj">学考成绩&nbsp;
-				<input id="text1" type="text" class="text"> A
-				<input id="text2" type="text" class="text"> B
-				<input id="text3" type="text" class="text"> C
-				<input id="text4" type="text" class="text"> D
-			</p>
-			<p class="p_zhcj_gkcj">面试成绩&nbsp;
-				<input id="text5" type="text" class="text">&nbsp;目标综合成绩
-				<input id="text6" type="text" class="text">
-			</p>
-			<p class="p_zhcj_gkcj">
-				<input id="button1" type="button" class="button" value="计算高考成绩" onclick="calculate()">
-				<input id="button2" type="button" class="button" value="清除" onclick="delet()">
+		</div>
+	</form>
+	<form class="form-inline" id="form4" role="form">
+		<div class="form-group">
+			
+				<input id="button1" type="button" class="btn btn-primary" value="计算高考成绩" onclick="calculate()">
+				<input id="button2" type="button" class="btn btn-danger" value="清除" onclick="delet()">
 				<a href="index.html">
-					<input id="button3" type="button" class="button" value="返回">
+					<input id="button3" type="button" class="btn btn-light" value="返回">
 				</a>
-			</p>
+			
+		</div>
 		</form>
 	</div>
 
-	<footer class="fixed-bottom">
+	<footer class="fixed-bottom text-center">
 		<p>© 2017 梦迎晨曦3.0 Written By
 			<a href="https://ericwww.github.io" class="footer" target="_blank">Syasusu</a>
 		</p>
